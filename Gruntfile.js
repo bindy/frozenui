@@ -109,19 +109,7 @@ module.exports =function(grunt) {
                 tasks: ['sass','cssmin','copy','compress']
             }
         },
-        ftpush: {
-            build: {
-                auth: {
-                    host: '119.147.200.113',
-                    port: 21000,
-                    authKey: 'key'
-                },
-                src: '<%=pkg.version%>',
-                dest: '/frozenui/<%=pkg.version%>',
-                exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn','_site'],
-                simple: true
-            }
-        },
+       
         shell: {
             // svn:{
             //    command: [
